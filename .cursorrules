@@ -1,0 +1,35 @@
+# Cursor Rules
+
+## GitHub Issue 생성 규칙
+
+이슈 생성 요청 시 다음 형식을 따른다:
+
+### 마일스톤 (기능 단위)
+- 이름: `{PREFIX}-XX 기능명`
+- PREFIX는 프로젝트별로 다름
+
+### 서브이슈 (작업 단위)
+- 타이틀: `[{PREFIX}-XX-Y] 작업명`
+- 본문:
+  - ## Context - 왜 이 작업이 필요한가
+  - ## Goal - 이 작업의 목표
+  - ## Tasks - 체크리스트
+
+### 브랜치 네이밍
+- feature/{prefix}-xx - 새 기능
+- fix/{prefix}-xx - 버그 수정
+- hotfix/{prefix}-xx - 긴급 수정
+- refactor/{prefix}-xx - 리팩토링
+- docs/{prefix}-xx - 문서 작업
+
+### 라벨
+- feature: 새로운 기능
+- fix: 버그 수정
+- docs: 문서 작업
+- refactor: 리팩토링
+
+## 코드 스타일
+
+- Python: ruff 포맷팅, mypy 타입 체크
+- 테스트: pytest 사용
+- 커밋 전 품질 체크 필수
